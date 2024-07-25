@@ -1,0 +1,4 @@
+{
+    "input.blend.uri": "input.blend",
+    "script.blend.conversion.uri": "script/convert_to_json_with_gltf.py"
+}
