@@ -1,13 +1,14 @@
 # Quantum Rift Scene Converter
 
-This project is the **Scene Converter** component for **Quantum Rift**, built using **Quarkus** and **Java**. The `SceneConverterMain` class serves as the entry point for this Quarkus application. It interacts with a service to process scene data and provides a command-line interface to pass arguments.
+This project is the **Scene Converter** component for **Quantum Rift**, built using **Quarkus** and **Java**. The `SceneConverterMain` class serves as the entry point for this Quarkus application. It is responsible for converting a **Blender** scene into a **Quantum Rift** scene format by processing the provided scene data through the `SceneConverterService`.
 
 ## Features
 
+- **Blender to Quantum Rift Conversion**: Converts Blender scenes into a format compatible with Quantum Rift.
 - **Command-line Interface (CLI)**: Accepts arguments and processes them using the `SceneConverterService`.
 - **Quarkus Framework**: Utilizes Quarkus for fast startup times and low memory footprint, making it ideal for cloud-native applications.
 - **Dependency Injection**: Leverages CDI for injecting the `SceneConverterService` into the main application class.
-  
+
 ## Requirements
 
 - **Java** (>=11)
@@ -68,6 +69,10 @@ If no arguments are provided, it will output:
 ```
 Hello, commando
 ```
+
+## Blender Scene Conversion
+
+This tool is specifically designed to convert Blender scenes into the Quantum Rift scene format. You can provide Blender scene data as input to the application, and it will transform the data into a format usable by Quantum Rift, facilitating seamless integration with the game engine.
 
 ## Folder Structure
 
